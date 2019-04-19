@@ -1,5 +1,6 @@
 package cn.xrz.service.impl;
 
+import cn.xrz.base.ResponseBase;
 import cn.xrz.entity.Student;
 import cn.xrz.feign.MemberFeign;
 import cn.xrz.service.IOrderService;
@@ -23,5 +24,11 @@ public class OrderServiceImpl implements IOrderService {
     @RequestMapping("/orderToMember")
     public Object orderToMember(@RequestParam("name") String name) {
         return memberFeign.getMember(name);
+    }
+
+    @Override
+    @RequestMapping("/orderToMemberStudentInfo")
+    public ResponseBase orderToMemberStudentInfo() {
+        return memberFeign.getStudentInfo();
     }
 }

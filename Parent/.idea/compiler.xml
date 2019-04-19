@@ -10,6 +10,7 @@
         <module name="api_member_service_impl" />
         <module name="api_order_service" />
         <module name="api_order_service_impl" />
+        <module name="common" />
       </profile>
     </annotationProcessing>
   </component>

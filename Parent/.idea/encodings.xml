@@ -7,5 +7,6 @@
     <file url="file://$PROJECT_DIR$/api_services" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api_services/api_member_service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/api_services/api_order_service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common" charset="UTF-8" />
   </component>
 </project>

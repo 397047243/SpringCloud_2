@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25be7f6e-371a-46d1-9b5f-16533515fe14" name="Default Changelist" comment="" />
+    <list default="true" id="25be7f6e-371a-46d1-9b5f-16533515fe14" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Parent/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Parent/api_member_service_impl/src/main/java/cn/xrz/service/impl/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Parent/api_member_service_impl/src/main/java/cn/xrz/service/impl/MemberServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Parent/api_member_service_impl/target/classes/cn/xrz/service/impl/MemberServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Parent/api_member_service_impl/target/classes/cn/xrz/service/impl/MemberServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Parent/api_order_service_impl/src/main/java/cn/xrz/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Parent/api_order_service_impl/src/main/java/cn/xrz/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Parent/api_order_service_impl/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../Parent/api_order_service_impl/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Parent/api_order_service_impl/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../Parent/api_order_service_impl/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Parent/api_order_service_impl/target/classes/cn/xrz/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Parent/api_order_service_impl/target/classes/cn/xrz/service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Parent/api_services/api_member_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Parent/api_services/api_member_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Parent/api_services/api_member_service/src/main/java/cn/xrz/service/IMemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Parent/api_services/api_member_service/src/main/java/cn/xrz/service/IMemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Parent/api_services/api_member_service/target/classes/cn/xrz/service/IMemberService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Parent/api_services/api_member_service/target/classes/cn/xrz/service/IMemberService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Parent/api_services/api_order_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Parent/api_services/api_order_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Parent/api_services/api_order_service/src/main/java/cn/xrz/service/IOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Parent/api_services/api_order_service/src/main/java/cn/xrz/service/IOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Parent/api_services/api_order_service/target/classes/cn/xrz/service/IOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Parent/api_services/api_order_service/target/classes/cn/xrz/service/IOrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Parent/pom.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,6 +88,9 @@
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -106,10 +124,13 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="y" value="47" />
     <option name="width" value="1347" />
     <option name="height" value="730" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -165,6 +186,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="E:/Android/Sdk" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -213,15 +238,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555662272232</updated>
-      <workItem from="1555662275068" duration="803000" />
+      <workItem from="1555662275068" duration="2089000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="803000" />
+    <option name="totallyTimeSpent" value="2089000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1060" extended-state="7" />
     <layout>
       <window_info id="Web" side_tool="true" />
       <window_info id="Designer" />
@@ -238,7 +263,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36800894" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44630873" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />

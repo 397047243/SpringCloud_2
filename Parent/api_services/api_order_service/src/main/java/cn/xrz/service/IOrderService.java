@@ -1,5 +1,6 @@
 package cn.xrz.service;
 
+import cn.xrz.base.ResponseBase;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -12,4 +13,7 @@ public interface IOrderService {
 
     @RequestMapping("/orderToMember")
     public Object orderToMember(@RequestParam("name") String name);
+
+    @RequestMapping("/orderToMemberStudentInfo")
+    public ResponseBase orderToMemberStudentInfo();
 }

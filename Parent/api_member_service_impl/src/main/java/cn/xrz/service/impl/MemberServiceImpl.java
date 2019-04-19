@@ -1,5 +1,7 @@
 package cn.xrz.service.impl;
 
+import cn.xrz.base.BaseApiService;
+import cn.xrz.base.ResponseBase;
 import cn.xrz.entity.Student;
 import cn.xrz.service.IMemberService;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Description :
  */
 @RestController
-public class MemberServiceImpl implements IMemberService {
+public class MemberServiceImpl extends BaseApiService implements IMemberService {
 
     @Override
     @RequestMapping("/getMember")
@@ -21,5 +23,16 @@ public class MemberServiceImpl implements IMemberService {
         student.setName(name);
         student.setAge(21);
         return student;
+    }
+
+    @Override
+    @RequestMapping("/getStudentInfo")
+    public ResponseBase getStudentInfo() {
+        try {
+            Thread.sleep(1500); //member接口产生1.5秒延迟
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return setResultSuccess("order服务接口调用member服务接口成功。。。");
     }
 }

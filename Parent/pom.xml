@@ -19,6 +19,7 @@
         <module>api_services</module>
         <module>api_order_service_impl</module>
         <module>api_member_service_impl</module>
+        <module>common</module>
     </modules>
 
     <properties>
@@ -27,6 +28,31 @@
     </properties>
 
     <name>Maven</name>
+
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-openfeign</artifactId>
+            </dependency>
+            <!-- Hystrix熔断器 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+            </dependency>
+        </dependencies>
+
 
     <!-- 注意：这里必须要添加，否则各种依赖问题 -->
     <repositories>

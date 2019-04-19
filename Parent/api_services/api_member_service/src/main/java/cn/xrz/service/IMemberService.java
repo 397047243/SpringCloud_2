@@ -1,5 +1,6 @@
 package cn.xrz.service;
 
+import cn.xrz.base.ResponseBase;
 import cn.xrz.entity.Student;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -13,4 +14,7 @@ public interface IMemberService {
 
     @RequestMapping("/getMember")
     public Student getMember(@RequestParam("name") String name);
+
+    @RequestMapping("/getStudentInfo")
+    public ResponseBase getStudentInfo();
 }
