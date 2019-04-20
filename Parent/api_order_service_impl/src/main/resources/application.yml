@@ -18,3 +18,11 @@ ribbon: #springCloud feign客户端默认开启支持ribbon(本地均衡负载�
 feign:
   hystrix:
     enabled: true
+
+# Hystrix禁止服务超时时间
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false

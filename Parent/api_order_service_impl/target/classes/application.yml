@@ -13,3 +13,16 @@ eureka:
 ribbon: #springCloud feign客户端默认开启支持ribbon(本地均衡负载器)
   ReadTimeout: 5000 #指的是建立链接所用时间，适用于网络情况正常的情况下，两端链接所用的时间（5s）
   ConnectTimeout: 5000 #指的是建立链接后从服务器读取到可用资源所用的时间（5s）
+
+#开启Hystrix断路器
+feign:
+  hystrix:
+    enabled: true
+
+# Hystrix禁止服务超时时间
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false

@@ -16,4 +16,7 @@ public interface IOrderService {
 
     @RequestMapping("/orderToMemberStudentInfo")
     public ResponseBase orderToMemberStudentInfo();
+
+    @RequestMapping("/orderInfo")
+    public ResponseBase orderInfo();
 }

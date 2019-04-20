@@ -28,6 +28,7 @@ public class MemberServiceImpl extends BaseApiService implements IMemberService 
     @Override
     @RequestMapping("/getStudentInfo")
     public ResponseBase getStudentInfo() {
+        System.out.println("===================>member服务：start");
         try {
             Thread.sleep(1500); //member接口产生1.5秒延迟
         } catch (InterruptedException e) {
