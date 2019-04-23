@@ -1,0 +1,11 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: swagger-test #\u670D\u52A1\u522B\u540D  \u670D\u52A1\u6CE8\u518C\u5230\u6CE8\u518C\u4E2D\u5FC3\u540D\u79F0
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://server1:8100/eureka #\u5F53\u524D\u670D\u52A1\u6CE8\u518C\u5230eureka\u670D\u52A1\u5730\u5740 \uFF08\u670D\u52A1\u4E2D\u5FC3\u7684\u5730\u5740\uFF09
+#    register-with-eureka: true #\u9700\u8981\u5C06\u6211\u7684\u670D\u52A1\u6CE8\u518C\u5230eureka\u4E0A
+#    fetch-registry: true #\u9700\u8981\u68C0\u7D22\u670D\u52A1

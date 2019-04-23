@@ -6,7 +6,10 @@ import cn.xrz.entity.Student;
 import cn.xrz.feign.MemberFeign;
 import cn.xrz.service.IOrderService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,13 +20,29 @@ import org.springframework.web.bind.annotation.RestController;
  * @Description :
  */
 @RestController
+@Api("Order服务接口")
 public class OrderServiceImpl extends BaseApiService implements IOrderService {
 
     @Autowired
     private MemberFeign memberFeign;
 
+
+    @Value("${server.port}")
+    private String port;
+
+    @GetMapping("/")
+    public String index(){
+        return "this is orderServeic! Port:"+port;
+    }
+
+
+    @GetMapping("/test")
+    public ResponseBase test(){
+        return super.setResultSuccess(memberFeign.getMember("test"));
+    }
+
     @Override
-    @RequestMapping("/orderToMember")
+    @GetMapping("/orderToMember")
     public Object orderToMember(@RequestParam("name") String name) {
         return memberFeign.getMember(name);
     }
@@ -33,7 +52,7 @@ public class OrderServiceImpl extends BaseApiService implements IOrderService {
      * @return
      */
     @Override
-    @RequestMapping("/orderToMemberStudentInfo")
+    @GetMapping("/orderToMemberStudentInfo")
     public ResponseBase orderToMemberStudentInfo() {
         return memberFeign.getStudentInfo();
     }
@@ -48,7 +67,7 @@ public class OrderServiceImpl extends BaseApiService implements IOrderService {
      *
      */
     @HystrixCommand(fallbackMethod = "orderToMemberStudentInfoHystrixFallback")
-    @RequestMapping("/orderToMemberStudentInfoHystrix")
+    @GetMapping("/orderToMemberStudentInfoHystrix")
     public ResponseBase orderToMemberStudentInfoHystrix() {
         //验证Hystrix默认开启线程池隔离   hystrix-OrderServiceImpl-1
         System.out.println("===============================>线程池名称："+Thread.currentThread().getName());
@@ -56,7 +75,7 @@ public class OrderServiceImpl extends BaseApiService implements IOrderService {
     }
 
     @Override
-    @RequestMapping("/orderInfo")
+    @GetMapping("/orderInfo")
     public ResponseBase orderInfo() {
         //验证Hystrix默认开启线程池隔离   http-nio-8002-exec-1
         System.out.println("===============================>线程池名称："+Thread.currentThread().getName());

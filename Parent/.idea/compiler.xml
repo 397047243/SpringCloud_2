@@ -11,7 +11,15 @@
         <module name="api_order_service" />
         <module name="api_order_service_impl" />
         <module name="common" />
+        <module name="config_client" />
+        <module name="config_server" />
+        <module name="stream_consumer" />
+        <module name="stream_producer" />
+        <module name="zuul_gateway" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="streamproducer" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,0 +1,23 @@
+server:
+  port: 8033
+spring:
+  application:
+    name: stream-consumer
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://server1:8100/eureka
+
+# rabbitMQ默认配置
+#rabbitmq:
+#  host: 127.0.0.1
+#  port: 5672
+#  username: guest
+#  passwrod: guest
+
+#消息分组
+cloud:
+  stream:
+    bindings:
+      my_stream_channel: #指定通道名称
+      group: stream #指定分组

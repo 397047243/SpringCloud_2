@@ -1,0 +1,17 @@
+server:
+  port: 8010 #配置服务端口号
+spring:
+  application:
+    name: config-server #服务别名  服务注册到注册中心名称
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/397047243/gkConfig.git
+          search-paths:
+          - gkConfig
+      label: master #分支名
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://server1:8100/eureka #当前服务注册到eureka服务地址 （服务中心的地址）

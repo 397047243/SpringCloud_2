@@ -1,0 +1,34 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: zuul-server
+  cloud:
+    config:
+      profile: prd
+      discovery:
+        service-id: config-server # 读取 配置服务端 的服务名
+        enabled: true #开启读取权限
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://server1:8100/eureka
+#开启所有端点 用于手动刷新config配置信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+#配置网关
+#zuul:
+#  routes:
+#    api-a: #自定义转发服务规则
+#      #当客户端发送请求 127.0.0.1：8888/api-member/开头的都会转发到  app-xrz-member 服务上
+#      path: /api-member/**
+#      #服务别名 zuul网关默认整合ribbon 自动实现负载均衡轮询效果
+#      serviceId: app-xrz-member
+#    api-b:
+#      path: /api-order/**
+#      serviceId: app-xrz-order
+

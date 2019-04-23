@@ -4,6 +4,9 @@ import cn.xrz.base.BaseApiService;
 import cn.xrz.base.ResponseBase;
 import cn.xrz.entity.Student;
 import cn.xrz.service.IMemberService;
+import io.swagger.annotations.Api;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,10 +17,19 @@ import org.springframework.web.bind.annotation.RestController;
  * @Description :
  */
 @RestController
+@Api("Mumber服务接口")
 public class MemberServiceImpl extends BaseApiService implements IMemberService {
 
+    @Value("${server.port}")
+    private String port;
+
+    @GetMapping("/")
+    public String index(){
+        return "this is memberServeic! Port:"+port;
+    }
+
     @Override
-    @RequestMapping("/getMember")
+    @GetMapping("/getMember")
     public Student getMember(@RequestParam("name") String name) {
         Student student = new Student();
         student.setName(name);
@@ -26,7 +38,7 @@ public class MemberServiceImpl extends BaseApiService implements IMemberService 
     }
 
     @Override
-    @RequestMapping("/getStudentInfo")
+    @GetMapping("/getStudentInfo")
     public ResponseBase getStudentInfo() {
         System.out.println("===================>member服务：start");
         try {

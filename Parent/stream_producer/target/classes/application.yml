@@ -1,0 +1,16 @@
+server:
+  port: 8030
+spring:
+  application:
+    name: stream-producer
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://server1:8100/eureka
+
+# rabbitMQ默认配置
+#rabbitmq:
+#  host: 127.0.0.1
+#  port: 5672
+#  username: guest
+#  passwrod: guest

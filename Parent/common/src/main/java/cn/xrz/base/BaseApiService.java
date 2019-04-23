@@ -1,11 +1,13 @@
 package cn.xrz.base;
 
+
 /**
  * @author XRZ
  * @date 2019-04-19
  * @Description : 服务接口响应封装类，统一规范响应服务接口信息
  */
 public class BaseApiService {
+
 
     public ResponseBase setResultError(Integer code,String msg){
         return setResult(code,msg,null);

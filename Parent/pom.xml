@@ -20,6 +20,11 @@
         <module>api_order_service_impl</module>
         <module>api_member_service_impl</module>
         <module>common</module>
+        <module>config_server</module>
+        <module>config_client</module>
+        <module>zuul_gateway</module>
+        <module>stream_producer</module>
+        <module>stream_consumer</module>
     </modules>
 
     <properties>

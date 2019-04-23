@@ -1,0 +1,21 @@
+server:
+  port: 8020 # 配置客户端端口号
+spring:
+  application:
+    name: test-ConfigClient
+  cloud:
+    config:
+      profile: prd
+      discovery:
+        service-id: config-server # 配置服务端名字
+        enabled: true #开启读取权限
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://server1:8100/eureka #当前服务注册到eureka服务地址 （服务中心的地址）
+#开启所有端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
